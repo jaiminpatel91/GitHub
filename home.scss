@@ -1,0 +1,73 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background-image: url(sky.jpg);
+    overflow: hidden;  
+    
+}
+.flyingltor{
+    
+    position: relative;
+    -webkit-animation: myfirst 15s infinite; /* Chrome, Safari, Opera */
+    -webkit-animation-direction: alternate; /* Chrome, Safari, Opera */
+    animation: myfirst 15s infinite;
+    animation-direction: alternate;
+    img{
+        height: 200px;
+        width: 200px;
+    }
+    }
+
+@-webkit-keyframes myfirst {
+    0%   {
+        left: 0px; 
+        top: 600px;
+    }
+    25%  {
+        left: 300px; 
+        top: 0px;
+    }
+    50%  {
+        left: 600px; 
+        top: 500px;
+    }
+    75%  {
+        left: 900px; 
+        top: 20px;
+    }
+    100% {
+        left: 1100px;
+        top: 400px;
+    }
+}   
+
+#gamescore{
+    color: white;
+}
+table{
+    float: left;
+    margin-top: 30px;
+    display: inline-block;
+    cursor: url(gun.png), auto;
+}
+td img{
+    height: 50px;
+    width: 80px;
+}
+
+footer{
+    background-image: url(grass.png);
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    height: 20%;
+}
+audio{
+    background-clip: url(shoot.mp3); 
+}
+button{
+    visibility: hidden;    
+}
